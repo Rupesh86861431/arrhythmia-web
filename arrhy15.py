@@ -42,7 +42,7 @@ st.markdown("""
 # Load dataset
 def load_data():
     try:
-        file_path = r"C:\\Users\\rupes\\Downloads\\arrhythmia database.xlsx"
+        file_path = r"arrhythmia database.xlsx"
         if not os.path.exists(file_path):
             raise FileNotFoundError(f"File not found at {file_path}")
         return pd.read_excel(file_path)
@@ -151,7 +151,7 @@ if selected_option == "Arrhythmia Overview":
     )
 
     st.write("### Types of Arrhythmia")
-    image_path = r"C:\Users\rupes\Downloads\arrhythmia image.jpg"
+    image_path = r"arrhythmia image.jpg"
     st.image(image_path, caption="Arrhythmia Classification", use_container_width=True)
     st.markdown(
         "- **Atrial Fibrillation (AFib):** A rapid, irregular heartbeat originating in the atria. It increases the risk of stroke."
